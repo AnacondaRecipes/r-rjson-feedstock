@@ -10,8 +10,8 @@ package:
 source:
   fn: rjson_{{ version }}.tar.gz
   url:
-    - https://cran.r-project.org/src/contrib/rjson_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/rjson/rjson_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/rjson_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/rjson/rjson_{{ version }}.tar.gz
   sha256: 77d00d8f6a1c936329b46f3b8b0be79a165f8c5f1989497f942ecc53dcf6f2ef
 
 
