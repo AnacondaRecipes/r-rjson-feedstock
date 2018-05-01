@@ -14,22 +14,15 @@ source:
     - {{ cran_mirror }}/src/contrib/Archive/rjson/rjson_{{ version }}.tar.gz
   sha256: 77d00d8f6a1c936329b46f3b8b0be79a165f8c5f1989497f942ecc53dcf6f2ef
 
-
-  # patches:
-   # List any patch files here
-   # - fix.patch
-
 build:
   merge_build_host: True  # [win]
   # If this is a new build for the same version, increment the build number.
   number: 4
 
-
   # This is required to make R link correctly on Linux.
   rpaths:
     - lib/R/lib/
     - lib/
-
 
 requirements:
   build:
